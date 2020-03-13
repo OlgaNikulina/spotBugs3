@@ -21,7 +21,7 @@ public class StatisticsService {
     long current_min_index = 0;
     long current_min = incomes[0];
     for (long income : incomes)
-      if (current_min < income) {
+      if (current_min > income) {
         current_min = income;
       }
     return current_min;
